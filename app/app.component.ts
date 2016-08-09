@@ -1,10 +1,12 @@
 import { Component, EventEmitter } from 'angular2/core';
 import { TaskListComponent } from './task-list.component';
 import { Task } from './task.model';
+import { EditTaskDetailsComponent} from './edit-task-details.component';
+import { NewTaskComponent } from './new-task.component';
 
 @Component({
   selector: 'my-app',
-  directives: [TaskListComponent],
+  directives: [TaskListComponent, EditTaskDetailsComponent, NewTaskComponent],
   template: `
   <div class="container">
   <h1>To-Do List</h1>

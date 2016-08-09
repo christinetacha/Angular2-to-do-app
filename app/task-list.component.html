@@ -3,5 +3,8 @@
   [class.selected]="currentTask === selectedTask"
   [task]="currentTask">
 </task-display>
+<new-task (onSubmitNewTask)="createTask($event)">
+  
+</new-task>
 <edit-task-details *ngIf="selectedTask" [task]="selectedTask">
 </edit-task-details>
